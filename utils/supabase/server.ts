@@ -1,0 +1,48 @@
+import { createServerClient, type CookieOptions } from "@supabase/ssr";
+import { cookies } from "next/headers";
+
+// =====================================================
+// Supabase Client for Server Components / Server Actions
+// Use this in Server Components, Server Actions, and API Routes
+// =====================================================
+
+export async function createClient() {
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+    // Validate environment variables
+    if (!supabaseUrl) {
+        throw new Error(
+            "Missing NEXT_PUBLIC_SUPABASE_URL environment variable. " +
+            "Please add it to your .env.local file."
+        );
+    }
+
+    if (!supabaseAnonKey) {
+        throw new Error(
+            "Missing NEXT_PUBLIC_SUPABASE_ANON_KEY environment variable. " +
+            "Please add it to your .env.local file."
+        );
+    }
+
+    const cookieStore = await cookies();
+
+    return createServerClient(supabaseUrl, supabaseAnonKey, {
+        cookies: {
+            getAll() {
+                return cookieStore.getAll();
+            },
+            setAll(cookiesToSet: { name: string; value: string; options: CookieOptions }[]) {
+                try {
+                    cookiesToSet.forEach(({ name, value, options }) =>
+                        cookieStore.set(name, value, options)
+                    );
+                } catch {
+                    // The `setAll` method was called from a Server Component.
+                    // This can be ignored if you have middleware refreshing
+                    // user sessions.
+                }
+            },
+        },
+    });
+}

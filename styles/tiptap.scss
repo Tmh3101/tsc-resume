@@ -1,0 +1,263 @@
+/* TipTap Editor Styles */
+
+.tiptap {
+  > * + * {
+    margin-top: 0.75em;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.25rem;
+    margin: 0;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  li {
+    margin: 0.25rem 0;
+  }
+
+  li p {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  /* Text alignment */
+  .text-left {
+    text-align: left;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .text-justify {
+    text-align: justify;
+  }
+
+  /* Bold, Italic, Underline */
+  strong {
+    font-weight: 600;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  u {
+    text-decoration: underline;
+  }
+
+  /* Highlight */
+  mark {
+    background-color: #fef3c7;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.125rem;
+  }
+
+  /* Color */
+  [style*="color"] {
+    /* Đảm bảo màu được áp dụng */
+  }
+
+  /* Focus styles */
+  &:focus {
+    outline: none;
+  }
+
+  /* Placeholder */
+  p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    float: left;
+    color: #adb5bd;
+    pointer-events: none;
+    height: 0;
+  }
+
+  /* Code block */
+  pre {
+    background: #0d0d0d;
+    color: #fff;
+    font-family: "JetBrains Mono", monospace;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+
+    code {
+      color: inherit;
+      padding: 0;
+      background: none;
+      font-size: 0.8rem;
+    }
+  }
+
+  /* Inline code */
+  code {
+    background-color: rgba(97, 97, 97, 0.1);
+    color: #616161;
+    border-radius: 0.25rem;
+    padding: 0.25rem 0.375rem;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.85em;
+  }
+
+  /* Blockquote */
+  blockquote {
+    padding-left: 1rem;
+    border-left: 2px solid #e5e7eb;
+    color: #6b7280;
+    font-style: italic;
+    margin: 1rem 0;
+  }
+
+  /* Horizontal rule */
+  hr {
+    border: none;
+    border-top: 2px solid #e5e7eb;
+    margin: 2rem 0;
+  }
+
+  /* Links */
+  a {
+    color: #3b82f6;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      color: #2563eb;
+    }
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+
+  /* Tables */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+
+    th,
+    td {
+      border: 1px solid #e5e7eb;
+      padding: 0.5rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f9fafb;
+      font-weight: 600;
+    }
+  }
+}
+
+/* Editor Container Styles */
+.tiptap-editor-container {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  
+  &:focus-within {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+  }
+}
+
+/* Menu Bar Styles */
+.tiptap-menu-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  flex-wrap: wrap;
+}
+
+/* Menu Button Styles */
+.tiptap-menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 0.375rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  color: #4b5563;
+
+  &:hover {
+    background-color: #e5e7eb;
+    color: #1f2937;
+  }
+
+  &.is-active {
+    background-color: #3b82f6;
+    color: white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .tiptap {
+    code {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #e5e7eb;
+    }
+
+    blockquote {
+      border-left-color: #374151;
+      color: #9ca3af;
+    }
+
+    hr {
+      border-top-color: #374151;
+    }
+  }
+
+  .tiptap-editor-container {
+    border-color: #374151;
+
+    &:focus-within {
+      border-color: #3b82f6;
+    }
+  }
+
+  .tiptap-menu-bar {
+    background-color: #1f2937;
+    border-bottom-color: #374151;
+  }
+
+  .tiptap-menu-button {
+    color: #d1d5db;
+
+    &:hover {
+      background-color: #374151;
+      color: #f9fafb;
+    }
+  }
+}
