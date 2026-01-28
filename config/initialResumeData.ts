@@ -22,7 +22,7 @@ export const initialResumeState = {
     employementStatus: "Đang tìm việc",
     email: "nguyenvana@example.com",
     phone: "090-123-4567",
-    location: "Quận Triều Dương, Bắc Kinh",
+    location: "Ninh Kiều, Cần Thơ",
     birthDate: "1995-01",
     fieldOrder: DEFAULT_FIELD_ORDER,
     icons: {
@@ -49,7 +49,7 @@ export const initialResumeState = {
   education: [
     {
       id: "1",
-      school: "Đại học Bắc Kinh",
+      school: "Đại học Cần Thơ",
       major: "Khoa học Máy tính",
       degree: "Cử nhân",
       startDate: "2013-09",
@@ -85,7 +85,7 @@ export const initialResumeState = {
       date: "07/2021 - Hiện tại",
       visible: true,
       details: `<ul class="custom-list">
-      <li>Phụ trách phát triển và bảo trì nền tảng Creator của Douyin/TikTok, dẫn dắt thiết kế giải pháp kỹ thuật cho các tính năng cốt lõi</li>
+      <li>Phụ trách phát triển và bảo trì nền tảng Creator của TikTok, dẫn dắt thiết kế giải pháp kỹ thuật cho các tính năng cốt lõi</li>
       <li>Tối ưu cấu hình build, giảm thời gian build từ 8 phút xuống 2 phút, nâng cao hiệu quả phát triển nhóm</li>
       <li>Thiết kế và triển khai thư viện component, tăng tỉ lệ tái sử dụng mã lên 70%, rút ngắn thời gian phát triển</li>
       <li>Dẫn dắt dự án tối ưu hiệu năng, giảm thời gian tải màn hình đầu tiên 50%, tích hợp hệ thống giám sát APM</li>
@@ -97,7 +97,7 @@ export const initialResumeState = {
   projects: [
     {
       id: "p1",
-      name: "Nền tảng Creator (Douyin/TikTok)",
+      name: "Nền tảng Creator (TikTok)",
       role: "Trưởng nhóm Frontend",
       date: "06/2022 - 12/2023",
       description: `<ul class="custom-list">
