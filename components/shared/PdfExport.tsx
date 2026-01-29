@@ -109,7 +109,7 @@ const PdfExport = () => {
         body: JSON.stringify({
           content: clonedElement.outerHTML,
           styles,
-          margin: globalSettings.pagePadding || 0
+          margin: 0
         }),
         signal: AbortSignal.timeout(45000)
       });
@@ -166,14 +166,15 @@ const PdfExport = () => {
       return;
     }
 
+    console.log(document.styleSheets);
+
     try {
       iframeWindow.document.open();
       const htmlContent = `
         <!DOCTYPE html>
         <html>
           <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Print Resume</title>
             <style>
               @font-face {
                 font-family: "Alibaba PuHuiTi";
@@ -185,51 +186,43 @@ const PdfExport = () => {
 
               @page {
                 size: A4;
-                margin: 0;
+                margin: ${pagePadding}px;
                 padding: 0;
               }
-
               * {
-                margin: 0;
-                padding: 0;
                 box-sizing: border-box;
               }
-
               html, body {
-                width: 100%;
-                height: 100%;
-                background: white;
                 margin: 0;
                 padding: 0;
+                width: 100%;
+                background: white;
               }
-
               body {
-                font-family: "Alibaba PuHuiTi", sans-serif;
+                font-family: sans-serif;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
-                line-height: 1.6;
               }
 
               #resume-preview {
                 padding: 0 !important;
                 margin: 0 !important;
+                font-family: "Alibaba PuHuiTi", sans-serif !important;
               }
 
               #print-content {
                 width: 210mm;
-                height: 297mm;
+                min-height: 297mm;
                 margin: 0 auto;
-                padding: ${pagePadding}px;
+                padding: 0;
                 background: white;
-                box-sizing: border-box;
+                box-shadow: none;
               }
-
               #print-content * {
                 box-shadow: none !important;
                 transform: none !important;
                 scale: 1 !important;
               }
-
               .scale-90 {
                 transform: none !important;
               }
