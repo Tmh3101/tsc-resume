@@ -133,7 +133,7 @@ h5,
 h6 {
   font-family: var(--font-heading);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 /* Glassmorphism Utility Classes */
@@ -1028,11 +1028,11 @@ h6 {
 ul.custom-list {
   list-style-type: disc;
   padding-left: 1.25em;
-  margin: 0.25em 0;
+  margin: 0.35em 0;
 }
 
 .custom-list li {
-  margin: 0.15em 0;
+  margin: 0.3em 0;
   padding-left: 0.25em;
 }
 
@@ -1046,11 +1046,11 @@ ul.custom-list {
 ol.custom-list-ordered {
   list-style-type: decimal;
   padding-left: 1.5em;
-  margin: 0.25em 0;
+  margin: 0.35em 0;
 }
 
 .custom-list-ordered li {
-  margin: 0.15em 0;
+  margin: 0.3em 0;
   padding-left: 0.25em;
 }
 
