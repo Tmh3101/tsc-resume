@@ -5,6 +5,7 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Github, Loader2 } from "lucide-react";
 import { createClient } from "@/utils/supabase/client";
+import Link from "next/link";
 
 // =====================================================
 // Login Modal Component
@@ -209,16 +210,24 @@ export function LoginModal({ isOpen, onClose }: LoginModalProps) {
 
                             {/* Footer */}
                             <div className="px-6 py-4 bg-gray-50 border-t border-gray-100">
-                                <p className="text-xs text-gray-500 text-center">
-                                    Bằng việc đăng nhập, bạn đồng ý với{" "}
-                                    <a href="#" className="text-orange hover:underline">
-                                        Điều khoản sử dụng
-                                    </a>{" "}
-                                    và{" "}
-                                    <a href="#" className="text-orange hover:underline">
-                                        Chính sách bảo mật
-                                    </a>
-                                </p>
+                                    <p className="text-xs text-gray-500 text-center">
+                                        Bằng việc đăng nhập, bạn đồng ý với{" "}
+                                        <Link
+                                            href="/terms-of-service"
+                                            target="_blank"
+                                            className="text-orange hover:underline"
+                                        >
+                                            Điều khoản sử dụng
+                                        </Link>{" "}
+                                        và{" "}
+                                        <Link
+                                            href="/privacy-policy"
+                                            target="_blank"
+                                            className="text-orange hover:underline"
+                                        >
+                                            Chính sách bảo mật
+                                        </Link>
+                                    </p>
                             </div>
                         </div>
                     </motion.div>
