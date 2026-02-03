@@ -2,6 +2,7 @@
 import { useMemo } from "react";
 import { GlobalSettings } from "@/types/resume";
 import { useResumeStore } from "@/store/useResumeStore";
+import { useTemplateStore } from "@/store/useTemplateStore";
 import { cn } from "@/lib/utils";
 import { templateConfigs } from "@/config/templates";
 
@@ -14,7 +15,14 @@ interface SectionTitleProps {
 
 const SectionTitle = ({ type, title, globalSettings, showTitle = true }: SectionTitleProps) => {
   const { activeResume } = useResumeStore();
+  const templates = useTemplateStore((state) => state.templates);
   const { menuSections = [], templateId = "default" } = activeResume || {};
+
+  // Lấy template và layout từ store
+  const template = useMemo(() => {
+    return templates.find((t) => t.id === templateId) || null;
+  }, [templates, templateId]);
+  const templateLayout = template?.layout || "default";
 
   const renderTitle = useMemo(() => {
     if (type === "custom") {
@@ -25,7 +33,7 @@ const SectionTitle = ({ type, title, globalSettings, showTitle = true }: Section
   }, [menuSections, type, title]);
 
   const config =
-    templateConfigs[templateId as string] || templateConfigs["default"];
+    templateConfigs[templateLayout as string] || templateConfigs["default"];
   const { styles } = config.sectionTitle;
 
   const themeColor = globalSettings?.themeColor;
@@ -47,7 +55,7 @@ const SectionTitle = ({ type, title, globalSettings, showTitle = true }: Section
 
   const renderTemplateTitle = () => {
     if (!showTitle) return null;
-    switch (templateId) {
+    switch (templateLayout) {
       case "modern":
         return (
           <h3
@@ -62,26 +70,19 @@ const SectionTitle = ({ type, title, globalSettings, showTitle = true }: Section
         );
 
       case "left-right":
+        const pagePadding = globalSettings?.pagePadding || 32;
         return (
-          <div className="relative">
-            <div
-              className="absolute inset-0"
-              style={{
-                backgroundColor: themeColor,
-                opacity: 0.1,
-              }}
-            />
-            <h3
-              className={cn("pl-4 py-1 flex items-center relative")}
-              style={{
-                ...baseStyles,
-                color: themeColor,
-                borderLeft: `3px solid ${themeColor}`,
-              }}
-            >
-              {renderTitle}
-            </h3>
-          </div>
+          <h3
+            className={cn("py-1 pl-3")}
+            style={{
+              ...baseStyles,
+              color: themeColor,
+              backgroundColor: `${themeColor}25`,
+              borderLeft: `4px solid ${themeColor}`,
+            }}
+          >
+            {renderTitle}
+          </h3>
         );
 
       case "classic":
