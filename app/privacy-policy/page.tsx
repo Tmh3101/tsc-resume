@@ -39,7 +39,7 @@ export default function PrivacyPolicyPage() {
                             Chính Sách Bảo Mật Thông Tin Người Dùng
                         </h1>
                         <p className="text-gray-600">
-                            Ngày cập nhật: 01/04/2025 | Ngày hiệu lực: 01/04/2025
+                            Ngày cập nhật: 03/02/2026 | Ngày hiệu lực: 03/02/2026
                         </p>
                     </div>
 
@@ -50,6 +50,7 @@ export default function PrivacyPolicyPage() {
                             Chính Sách Bảo Mật Thông Tin Người Dùng này vì nó là một phần của Điều Khoản Sử Dụng nhằm quản lý 
                             việc sử dụng các Dịch vụ trên nền tảng TSC.
                         </p>
+                        <br />
 
                         <h2>1. THU THẬP DỮ LIỆU CÁ NHÂN</h2>
                         <br />
@@ -61,12 +62,12 @@ export default function PrivacyPolicyPage() {
                         </p>
                         <ul>
                             <li>
-                                - <strong>Thông tin định danh:</strong> Họ tên, địa chỉ email, ảnh đại diện (được cung cấp bởi 
+                                - <strong>Thông tin định danh:</strong> Họ tên, địa chỉ email, (được cung cấp bởi 
                                 Google/GitHub khi bạn đăng nhập).
                             </li>
                             <li>
                                 - <strong>Dữ liệu hồ sơ (CV):</strong> Các thông tin bạn nhập vào Resume Builder bao gồm: Số 
-                                điện thoại, địa chỉ, lịch sử học vấn, kinh nghiệm làm việc, dự án, và kỹ năng chuyên môn.
+                                điện thoại, địa chỉ, lịch sử học vấn, kinh nghiệm làm việc, dự án, kỹ năng chuyên môn và hình ảnh cá nhân.
                             </li>
                             <li>
                                 - <strong>Dữ liệu sử dụng:</strong> Nhật ký hệ thống về việc tạo, chỉnh sửa và xuất file PDF.
@@ -94,14 +95,6 @@ export default function PrivacyPolicyPage() {
                                 - <strong>Phân tích AI:</strong> Sử dụng nội dung CV để chấm điểm ATS và gợi ý chỉnh sửa 
                                 thông qua tính năng Resume Analyzer.
                             </li>
-                            <li>
-                                - <strong>Kết nối việc làm:</strong> (Chỉ khi bạn đồng ý) Chia sẻ hồ sơ rút gọn với các đối tác 
-                                tuyển dụng trong mạng lưới TSC.
-                            </li>
-                            <li>
-                                - <strong>Thúc đẩy dịch vụ:</strong> Giới thiệu đến bạn các dịch vụ khác của TSC như: Giới thiệu 
-                                việc làm, Giới thiệu khóa học, sự kiện, tin tức, Kết nối nhà tuyển dụng.
-                            </li>
                         </ul>
                         <br />
 
@@ -120,10 +113,6 @@ export default function PrivacyPolicyPage() {
                             <li>
                                 - <strong>Nutrient &amp; Puppeteer:</strong> Công cụ xử lý chuyển đổi định dạng PDF.
                             </li>
-                            <li>
-                                - <strong>Nhà tuyển dụng:</strong> (Chỉ khi được sự đồng ý rõ ràng) Chia sẻ thông tin hồ sơ 
-                                với các nhà tuyển dụng trong mạng lưới TSC.
-                            </li>
                         </ul>
                         <br />
 
@@ -133,9 +122,6 @@ export default function PrivacyPolicyPage() {
                         <p>Bạn có toàn quyền kiểm soát dữ liệu của mình:</p>
                         <ul>
                             <li>- <strong>Quyền truy cập:</strong> Xem và kiểm tra dữ liệu cá nhân của bạn bất kỳ lúc nào.</li>
-                            <li>- <strong>Quyền chỉnh sửa:</strong> Cập nhật thông tin cá nhân và hồ sơ nghề nghiệp.</li>
-                            <li>- <strong>Quyền xóa:</strong> Yêu cầu xóa vĩnh viễn tài khoản và toàn bộ dữ liệu liên quan.</li>
-                            <li>- <strong>Quyền rút lại đồng ý:</strong> Ngừng chia sẻ thông tin với nhà tuyển dụng bất kỳ lúc nào.</li>
                             <li>- <strong>Quyền khiếu nại:</strong> Liên hệ với chúng tôi nếu có bất kỳ lo ngại nào về quyền riêng tư.</li>
                         </ul>
                         <br />
@@ -149,26 +135,14 @@ export default function PrivacyPolicyPage() {
                             lâu hơn nếu có yêu cầu pháp lý buộc chúng tôi phải giữ lại thông tin.
                         </p>
                         <br />
-                        <p>
-                            Sau khi chấm dứt hoặc vô hiệu hóa tài khoản của bạn, nếu không nhận được yêu cầu xóa Dữ liệu cá nhân 
-                            của bạn, TSC có thể giữ lại thông tin trong khoảng thời gian hợp lý về mặt thương mại cho các mục đích 
-                            sao lưu, lưu trữ và/hoặc kiểm tra theo quy định của pháp luật Việt Nam.
-                        </p>
-                        <br />
 
                         <h2>6. BẢO MẬT DỮ LIỆU CÁ NHÂN</h2>
                         <br />
                         
                         <ul>
                             <li>
-                                TSC cam kết bảo mật Dữ liệu Cá nhân của bạn. TSC có quy trình kỹ thuật, hành chính và vật chất 
-                                thích hợp để chống mất mát, trộm cắp và lạm dụng, cũng như chống lại việc truy cập trái phép, 
-                                tiết lộ, thay đổi và tiêu hủy thông tin.
-                            </li>
-                            <br />
-                            <li>
-                                Thông tin nhạy cảm (như số thẻ ngân hàng, thẻ tín dụng) được nhập vào các dịch vụ cổng thanh toán 
-                                sẽ được mã hóa trong quá trình truyền tải thông tin.
+                                TSC đảm bảo bảo mật Dữ liệu Cá nhân của bạn. TSC có quy trình kỹ thuật và vật chất 
+                                thích hợp để chống mất mát, trộm cắp và lạm dụng, cũng như chống lại việc truy cập trái phép, thay đổi và tiêu hủy thông tin.
                             </li>
                             <br />
                             <li>
@@ -182,11 +156,6 @@ export default function PrivacyPolicyPage() {
                         <br />
                         
                         <ul>
-                            <li>
-                                Bạn có trách nhiệm cung cấp cho TSC các thông tin một cách chính xác, không gây nhầm lẫn, 
-                                đầy đủ và gần nhất, và có trách nhiệm cập nhật Dữ liệu Cá nhân khi có sự sai lệch.
-                            </li>
-                            <br />
                             <li>
                                 Trong trường hợp bạn cung cấp Dữ liệu Cá nhân của một người nào đó khác cho TSC, bạn nên 
                                 thông báo những người này về việc cung cấp Dữ liệu Cá nhân của họ cho TSC.
@@ -203,8 +172,6 @@ export default function PrivacyPolicyPage() {
                         <br />
                         
                         <ul>
-                            <li>Mất dữ liệu vào các đối tượng mà ứng viên cho phép nhầm/lỗi.</li>
-                            <br />
                             <li>Các đối tượng lừa đảo sử dụng Dữ liệu Cá nhân của bạn để thực hiện các mục tiêu bất hợp pháp 
                                 sau khi được bạn chia sẻ.</li>
                             <br />

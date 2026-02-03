@@ -39,7 +39,7 @@ export default function TermsOfServicePage() {
                             Điều Khoản Sử Dụng Dịch Vụ
                         </h1>
                         <p className="text-gray-600">
-                            Ngày cập nhật: 01/04/2025 | Ngày hiệu lực: 01/04/2025
+                            Ngày cập nhật: 03/02/2026 | Ngày hiệu lực: 03/02/2026
                         </p>
                     </div>
 
@@ -75,11 +75,6 @@ export default function TermsOfServicePage() {
                         <br />
 
                         <h2>3. MẬT KHẨU VÀ BẢO MẬT</h2>
-                        <br />
-                        <p>
-                            Khi bạn đăng ký sử dụng dịch vụ TSC bạn sẽ được yêu cầu khởi tạo mật khẩu. Để tránh việc gian lận, 
-                            bạn phải giữ mật khẩu này bảo mật và không được tiết lộ hoặc chia sẻ với bất kỳ người nào.
-                        </p>
                         <br />
                         <p>
                             Quyền sở hữu tài khoản thuộc về TSC. Bạn đồng ý rằng tất cả các nội dung hiển thị trên dịch vụ TSC, 
@@ -144,7 +139,7 @@ export default function TermsOfServicePage() {
                         <br />
                         <p>
                             Chúng tôi có quyền cập nhật, bảo trì hoặc thay đổi tính năng hệ thống để nâng cao trải nghiệm. 
-                            Trong trường hợp bảo trì (Maintenance Mode), chúng tôi sẽ có thông báo cụ thể trên trang chủ.
+                            Trong trường hợp bảo trì, chúng tôi sẽ có thông báo cụ thể trên trang chủ.
                         </p>
                         <br />
 
