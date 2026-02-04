@@ -100,18 +100,19 @@ export default function PrivacyPolicyPage() {
 
                         <h2>3. CHIA SẺ DỮ LIỆU VỚI BÊN THỨ BA</h2>
                         <br />
-                        
-                        <p>Chúng tôi cam kết minh bạch về các đối tác xử lý dữ liệu:</p>
+                        <p>
+                            TSC cam kết minh bạch và bảo vệ tuyệt đối dữ liệu cá nhân của bạn khi hợp tác với các đối tác công nghệ. Dữ liệu CV của bạn chỉ được gửi qua API để xử lý (inference) và <strong>tuyệt đối không</strong> được sử dụng để huấn luyện (train) bất kỳ mô hình công cộng nào của đối tác. Chúng tôi chỉ hợp tác với các đơn vị có chính sách <strong>Zero-retention</strong> (không lưu trữ dữ liệu) đối với API AI.
+                        </p>
+                        <br />
                         <ul>
                             <li>
-                                - <strong>Cerebras AI:</strong> Đối tác cung cấp mô hình LLM để phân tích nội dung CV. 
-                                Dữ liệu gửi đi chỉ phục vụ mục đích phân tích và không được dùng để huấn luyện mô hình công cộng.
+                                - <strong>Cerebras AI:</strong> Đối tác xử lý ngôn ngữ tự nhiên (NLP) cho tính năng phân tích CV. Dữ liệu CV chỉ được gửi qua API để phân tích, <strong>không lưu trữ, không sử dụng để huấn luyện mô hình công cộng</strong>. Cerebras AI áp dụng <strong>Zero-retention policy</strong> cho mọi dữ liệu truyền qua API.
                             </li>
                             <li>
-                                - <strong>Supabase:</strong> Đối tác cung cấp hạ tầng cơ sở dữ liệu và xác thực bảo mật.
+                                - <strong>Supabase:</strong> Đối tác cung cấp hạ tầng lưu trữ đám mây và xác thực bảo mật. Dữ liệu cá nhân và hồ sơ của bạn được lưu trữ an toàn trên hệ thống Supabase, tuân thủ các quy định bảo mật hiện hành.
                             </li>
                             <li>
-                                - <strong>Nutrient &amp; Puppeteer:</strong> Công cụ xử lý chuyển đổi định dạng PDF.
+                                - <strong>Nutrient:</strong> Đối tác xử lý chuyển đổi và xuất file PDF. Dữ liệu chỉ được sử dụng cho mục đích chuyển đổi định dạng, không lưu trữ lâu dài.
                             </li>
                         </ul>
                         <br />
@@ -180,11 +181,20 @@ export default function PrivacyPolicyPage() {
                         <br />
                         <h2>9. LIÊN HỆ</h2>
                         <br />
-                        
-                        <p>
-                            Nếu bạn có câu hỏi về Chính Sách Bảo Mật này, hoặc muốn liên hệ với bên kiểm soát dữ liệu cá nhân 
-                            của chúng tôi, vui lòng liên hệ với chúng tôi và chúng tôi sẽ cố gắng giải quyết.
-                        </p>
+                        <div className="space-y-2">
+                            <p>
+                                Nếu bạn có bất kỳ câu hỏi, yêu cầu hoặc khiếu nại liên quan đến Chính Sách Bảo Mật này, vui lòng liên hệ với đơn vị quản lý dữ liệu cá nhân của chúng tôi qua các thông tin sau:
+                            </p>
+                            <ul>
+                                <li>- <strong>Email:</strong> <a href="mailto:kynd@titops.com" className="text-blue-600 underline">kynd@titops.com</a></li>
+                                <li>- <strong>Hotline:</strong> <a href="tel:+84783767845" className="text-blue-600 underline">+84 783 767 845</a></li>
+                                <li>- <strong>Địa chỉ:</strong> Ninh Kiều, Cần Thơ, Việt Nam</li>
+                                <li>- <strong>Đơn vị quản lý:</strong> The Student Company (TSC)</li>
+                            </ul>
+                            <p>
+                                Chúng tôi sẽ phản hồi và hỗ trợ bạn trong thời gian sớm nhất có thể.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </main>

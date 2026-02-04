@@ -74,12 +74,10 @@ export default function TermsOfServicePage() {
                         </p>
                         <br />
 
-                        <h2>3. MẬT KHẨU VÀ BẢO MẬT</h2>
+                        <h2>3. TÀI KHOẢN VÀ BẢO MẬT</h2>
                         <br />
                         <p>
-                            Quyền sở hữu tài khoản thuộc về TSC. Bạn đồng ý rằng tất cả các nội dung hiển thị trên dịch vụ TSC, 
-                            bao gồm nhưng không giới hạn các thông tin mà bạn cung cấp cho TSC để hiển thị, sơ yếu lý lịch, 
-                            lịch sử truy cập, các hình ảnh, dữ liệu mà TSC nhận được, hoặc thu thập được.
+                            Bạn có trách nhiệm bảo mật thông tin đăng nhập tài khoản của mình (Google/GitHub). TSC chỉ cung cấp nền tảng để bạn lưu trữ, chỉnh sửa và quản lý dữ liệu hồ sơ cá nhân. Mọi hành vi để lộ, mất cắp thông tin đăng nhập dẫn đến rủi ro hoặc tổn thất, bạn hoàn toàn chịu trách nhiệm. Nếu phát hiện truy cập trái phép, bạn cần thông báo ngay cho TSC để được hỗ trợ kịp thời.
                         </p>
                         <br />
 
@@ -96,21 +94,18 @@ export default function TermsOfServicePage() {
                         </ul>
                         <br />
 
-                        <h2>5. TUYÊN BỐ VỀ QUYỀN SỞ HỮU TRÍ TUỆ</h2>
+                        <h2>5. QUYỀN SỞ HỮU TRÍ TUỆ &amp; CẤP PHÉP SỬ DỤNG</h2>
                         <br />
                         <p>
-                            Bạn tuyên bố và đảm bảo rằng bạn sở hữu Nội dung mà bạn đăng lên hoặc thông qua Dịch vụ hay nói cách 
-                            khác, bạn có quyền cấp các quyền và giấy phép được quy định trong các Điều Khoản Sử Dụng này.
+                            <strong>5.1. Tài sản của TSC:</strong> Toàn bộ giao diện, mã nguồn, logo thương hiệu và các mẫu thiết kế CV (Classic, Modern, Timeline...) là tài sản trí tuệ độc quyền của TSC. Bạn không được phép sao chép, bán lại hoặc sử dụng cho mục đích thương mại khi chưa có sự đồng ý bằng văn bản của TSC.
                         </p>
                         <br />
                         <p>
-                            <strong>Tài sản của TSC:</strong> Giao diện ứng dụng, mã nguồn, logo thương hiệu và các mẫu thiết kế CV 
-                            (Classic, Modern, Timeline...) thuộc bản quyền của TSC. Nghiêm cấm sao chép cho mục đích thương mại.
+                            <strong>5.2. Tài sản của bạn:</strong> Bạn giữ toàn quyền sở hữu đối với nội dung văn bản, hình ảnh và dữ liệu hồ sơ cá nhân mà bạn nhập vào hệ thống.
                         </p>
                         <br />
                         <p>
-                            <strong>Tài sản của bạn:</strong> Bạn giữ toàn quyền sở hữu đối với nội dung thông tin cá nhân trong CV 
-                            do bạn tạo ra.
+                            <strong>5.3. Cấp phép cho TSC:</strong> Để TSC có thể cung cấp dịch vụ (lưu trữ, sao lưu, phân tích AI, hiển thị trên Dashboard), bạn đồng ý cấp cho TSC một giấy phép (license) miễn phí, không độc quyền để lưu trữ, sao chép, xử lý dữ liệu của bạn trong phạm vi cung cấp dịch vụ.
                         </p>
                         <br />
 
@@ -126,13 +121,21 @@ export default function TermsOfServicePage() {
                         <h2>7. TUYÊN BỐ MIỄN TRỪ TRÁCH NHIỆM VỀ AI</h2>
                         <br />
                         <p>
-                            Tính năng <strong>Resume Analyzer</strong> sử dụng công nghệ AI (Cerebras 120B) để đưa ra phân tích. 
-                            Các kết quả chấm điểm và gợi ý chỉ mang tính chất tham khảo nhằm hỗ trợ bạn cải thiện hồ sơ.
+                            Tính năng <strong>Resume Analyzer</strong> sử dụng công nghệ AI tiên tiến (Cerebras 120B) để hỗ trợ bạn phân tích và cải thiện hồ sơ. Tuy nhiên:
                         </p>
+                        <ul>
+                            <li>Kết quả phân tích chỉ mang tính chất tham khảo.</li>
+                            <li>AI có thể tạo ra nội dung không chính xác (hallucinations), bạn cần tự kiểm chứng lại thông tin trước khi gửi CV đi ứng tuyển.</li>
+                            <li>TSC không cam kết hay đảm bảo việc sử dụng công cụ này sẽ giúp bạn chắc chắn nhận được việc làm.</li>
+                        </ul>
                         <br />
-                        <p>
-                            TSC không cam kết hay đảm bảo việc sử dụng công cụ này sẽ giúp bạn chắc chắn nhận được việc làm.
-                        </p>
+                        <h2>8. HÀNH VI BỊ NGHIÊM CẤM</h2>
+                        <br />
+                        <ul>
+                            <li>Không sử dụng bot, crawler hoặc các công cụ tự động để gửi lượng lớn yêu cầu đến máy chủ (spam API, spam phân tích CV).</li>
+                            <li>Không cố tình nhập liệu nội dung độc hại, virus, hoặc trái thuần phong mỹ tục vào CV.</li>
+                            <li>Không sao chép, dịch ngược (reverse engineer) mã nguồn, giao diện hoặc bất kỳ thành phần nào của nền tảng TSC.</li>
+                        </ul>
                         <br />
 
                         <h2>8. THAY ĐỔI DỊCH VỤ</h2>
@@ -145,9 +148,15 @@ export default function TermsOfServicePage() {
 
                         <h2>9. LIÊN HỆ</h2>
                         <br />
-                        <p>
-                            Nếu bạn có câu hỏi về Điều Khoản Sử Dụng này, vui lòng liên hệ với chúng tôi để được giải đáp nhanh nhất.
-                        </p>
+                        <div className="space-y-2">
+                            <p>Nếu bạn có bất kỳ câu hỏi, yêu cầu hoặc khiếu nại liên quan đến Điều Khoản Sử Dụng, vui lòng liên hệ với chúng tôi qua các thông tin sau:</p>
+                            <ul>
+                                <li>- <strong>Email:</strong> <a href="mailto:kynd@titops.com" className="text-blue-600 underline">kynd@titops.com</a></li>
+                                <li>- <strong>Hotline:</strong> <a href="tel:+84783767845" className="text-blue-600 underline">+84 783 767 845</a></li>
+                                <li>- <strong>Địa chỉ:</strong> Ninh Kiều, Cần Thơ, Việt Nam</li>
+                            </ul>
+                            <p>Chúng tôi sẽ phản hồi và hỗ trợ bạn trong thời gian sớm nhất có thể.</p>
+                        </div>
                     </div>
                 </div>
             </main>
